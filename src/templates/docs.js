@@ -110,41 +110,41 @@ export default class MDXRuntimeTest extends Component {
   }
 }
 
-export const pageQuery = graphql`
-  query OldQuery($id: String!) {
-    site {
-      siteMetadata {
-        title
-        docsLocation
-      }
-    }
-    mdx(fields: { id: { eq: $id } }) {
-      fields {
-        id
-        title
-        slug
-      }
-      body
-      tableOfContents
-      parent {
-        ... on File {
-          relativePath
-        }
-      }
-      frontmatter {
-        metaTitle
-        metaDescription
-      }
-    }
-    allMdx {
-      edges {
-        node {
-          fields {
-            slug
-            title
-          }
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query OldQuery($id: String!) {
+//     site {
+//       siteMetadata {
+//         title
+//         docsLocation
+//       }
+//     }
+//     mdx(fields: { id: { eq: $id } }) {
+//       fields {
+//         id
+//         title
+//         slug
+//       }
+//       body
+//       tableOfContents
+//       parent {
+//         ... on File {
+//           relativePath
+//         }
+//       }
+//       frontmatter {
+//         metaTitle
+//         metaDescription
+//       }
+//     }
+//     allMdx {
+//       edges {
+//         node {
+//           fields {
+//             slug
+//             title
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
