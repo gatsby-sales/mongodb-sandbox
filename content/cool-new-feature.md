@@ -10,7 +10,7 @@ The following is a code block with JavaScript language syntax highlighting.
 import React from 'react';
 ```
 
-Supports multiple changes.
+Supports multiple changes and edits.
 
 The following is a code block with diff. Lines with `+` highlighted in green shade indicating an addition. Lines with `-` highlighted in red shade indicating a deletion.
 
