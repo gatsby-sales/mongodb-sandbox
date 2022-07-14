@@ -1,31 +1,17 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://mongodbsandboxmain.gatsbyjs.io/',
     gaTrackingId: null,
-    trailingSlash: false,
   },
   header: {
     logo: '',
-    logoLink: 'https://www.gatsbyjs.com/',
+    logoLink: '/',
     title: ``,
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+    githubUrl: 'https://github.com/gatsby-sales/mongodb-sandbox',
     helpUrl: '',
     tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Twitter'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+    social: ``,
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
@@ -46,21 +32,20 @@ const config = {
     links: [{ text: '', link: '' }],
     frontLine: false,
     ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+    title: '',
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
-    ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    title: 'Gatsby MongoDB Sandbox',
+    description: 'Documentation built with MDX.',
+    ogImage: 'https://www.mongodb.com/docs/assets/favicon.ico',
+    docsLocation: '',
+    favicon: 'https://www.mongodb.com/docs/assets/favicon.ico',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Gatsby Gitbook Starter',
-      short_name: 'GitbookStarter',
+      name: 'Gatsby MongoDB Sandbox',
+      short_name: 'MongoDB+Gatsby',
       start_url: '/',
       background_color: '#6b37bf',
       theme_color: '#6b37bf',
@@ -68,7 +53,7 @@ const config = {
       crossOrigin: 'use-credentials',
       icons: [
         {
-          src: 'src/pwa-512.png',
+          src: '',
           sizes: `512x512`,
           type: `image/png`,
         },
