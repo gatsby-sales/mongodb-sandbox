@@ -26,6 +26,7 @@ export default class MDXPage extends Component {
     } = data;
 
     const githubIcon = require('../components/images/github.svg').default;
+
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
       .filter((slug) => slug !== '/')

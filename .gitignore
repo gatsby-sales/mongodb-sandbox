@@ -1,7 +1,6 @@
-public
 .cache
+public
 node_modules
-*DS_Store
-*.env
-
-.idea/
+.env
+.env.development
+.env.production

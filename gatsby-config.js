@@ -1,7 +1,20 @@
-require('dotenv').config();
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 const queries = require('./src/utils/algolia');
+
 const config = require('./config');
+
 const plugins = [
+  // {
+  //   resolve: `gatsby-source-contentful`,
+  //   options: {
+  //     spaceId: `dmkshbt4ai4n`,
+  //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  //     host: process.env.CONTENTFUL_HOST,
+  //   },
+  // },
+  // 'gatsby-plugin-image',
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
   {
@@ -49,6 +62,7 @@ const plugins = [
     },
   },
 ];
+
 // check and add algolia
 if (
   config.header.search &&
